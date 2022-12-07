@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+Info:
+<p>Users</p>
+<p>Login: manager</p>
+<P>Password: root</P>
+<p>Login: guest</p>
+<P>Password: </P>
+<p>Requests</p>
+<p>http://localhost:3466/products GET request show list of all products. </p>
+<p>http://localhost:3466/products/byCompany?name=companyName GET request show list of all products by company's name. </p>
+<p><b>Available for roles: manager and guest</b></p>
+<p>http://localhost:3466/products/save POST request add product in database. In the body pass JSON: {"id": "id", "name": "productName", "companyName": "companyName", "count": count}</p>
+<p>http://localhost:3466/products/delete?name=productName POST request delete product from database.</p>
+<p><b>Available for managers only</b></p>
+</body>
+</html>
